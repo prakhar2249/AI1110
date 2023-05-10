@@ -305,7 +305,15 @@ columns=fullflexible
 $$ P(X=i), i=(1,2,3,4,5,6)$$ $$ P(Y=j), j=(1,2,3,4,5,6) $$
  \end{large}
 
-\begin{large}Let $D=|X-Y|$ be the absolute difference between the numbers on the two dice. We want to find $P(E=2)$, which is the probability that the absolute difference is exactly 2. \end{large}
+\begin{large}Let $D=|X-Y|$ be the absolute difference between the numbers on the two dice,where $D=1,2,3,4,5,6$ etc and CDF of D is:
+$$ F(X)= \left(\frac{6}{36}\right),D=0$$
+        $$ \left(\frac{16}{36}\right),D\geq1 $$    
+         $$ \left(\frac{24}{36}\right),D\geq2$$
+         $$\left(\frac{30}{36}\right),D\geq3$$
+        $$ \left(\frac{34}{36}\right),D\geq4$$
+        $$ \left(\frac{36}{36}\right),D\geq5$$
+
+ And we want to find $P(E=2)$, which is the probability that the absolute difference is exactly 2. \end{large}
 
 \begin{large}
 We are going to use this formula;$$ P(E=2)= \sum P(X=i)P(y=j) $$
